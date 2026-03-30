@@ -1,0 +1,52 @@
+/* Header */
+header {
+  background: var(--background-main);
+  justify-content: space-between;
+  padding: 3px 20px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
+header nav svg,
+header nav button {
+  height: 32px;
+  cursor: pointer;
+}
+header nav svg[viewbox="0 0 100 100"] {
+  fill: var(--color-text);
+}
+header nav svg[viewbox="0 0 60 60"] {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  fill-rule: evenodd;
+}
+header nav svg[viewbox="0 0 24 24"] {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+header div {
+  color: var(--color-text);
+}
+.time {
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 700px;
+  margin: auto;
+}
+.time div {
+  color: var(--color-text);
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+  line-height: normal;
+}
