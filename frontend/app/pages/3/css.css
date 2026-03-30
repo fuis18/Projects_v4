@@ -1,0 +1,116 @@
+.f3,
+.f3__calculator,
+.f3__buttons-s,
+.f3__buttons-b {
+  display: grid;
+  grid-gap: 10px 5px;
+  align-items: start;
+}
+.f3 {
+  grid-template:
+    "calculator" auto
+    "process" auto
+    / 1fr;
+  grid-gap: 15px;
+}
+.f3__calculator {
+  grid-area: calculator;
+}
+.f3__window {
+  background: #cfc;
+  border-radius: 8px;
+  padding: 5px 14px;
+  overflow-y: overlay;
+}
+.f3__window-operation,
+.f3__window-text,
+.f3__window-answer,
+.f3__window-history {
+  color: #000;
+  line-height: normal;
+  min-height: 20px;
+}
+.f3__window-quest {
+  width: 100%;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+}
+.f3__window-text {
+  font-weight: 700;
+  animation: animate-blink 1s forwards infinite;
+}
+.f3__window-answer,
+.f3__window-history {
+  text-align: right;
+  font-family: 'ds-digi';
+  font-size: 20px;
+}
+.f3__buttons-b {
+  grid-template-columns: repeat(5, 1fr);
+}
+.f3__buttons-s {
+  grid-template-columns: repeat(6, 1fr);
+}
+.f3__buttons-s button,
+.f3__buttons-b button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 1px 1px 5px 0 #000;
+  text-align: center;
+  align-content: center;
+}
+.f3__button-s {
+  background: #223;
+  height: 28px;
+  font-size: 14px;
+}
+.f3__button-b {
+  background: #777;
+  height: 35px;
+  font-size: 18px;
+}
+.f3__button-n[value="DEL"],
+.f3__button-n[value="AC"] {
+  background: #c55;
+}
+.f3__process {
+  font-family: math;
+  min-height: 50px;
+  border-left: 3px solid var(--color-title);
+  padding-left: 10px;
+  color: var(--color-text);
+  overflow-wrap: anywhere;
+}
+@keyframes animate-blink {
+  0% {
+    filter: opacity(1);
+  }
+  50% {
+    filter: opacity(0);
+  }
+  90% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
+@media screen and (min-width: 900px) {
+  .f3 {
+    grid-template:
+      "calculator process" auto
+      / 7fr 4fr;
+  }
+  .f3__buttons-s,
+  .f3__buttons-b {
+    grid-gap: 15px 12px;
+  }
+  .f3__history-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

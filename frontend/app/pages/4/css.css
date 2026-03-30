@@ -1,0 +1,87 @@
+.f4__h1, .f4 {
+  font-family: "avenir", sans-serif;
+}
+.f4 {
+  display: grid;
+  grid-gap: 18px;
+  grid-template:
+    "img" auto
+    "form" auto
+    "res" auto
+    / auto;
+}
+.f4__img {
+  grid-area: img;
+}
+.f4__form {
+  display: grid;
+  justify-content: center;
+  grid-area: form;
+  grid-template:
+    "name" auto
+    "last" auto
+    "mail" auto
+    "about" auto
+    "submit" auto
+    / 1fr;
+}
+.form__input-content.name {
+  grid-area: name;
+}
+.form__input-content.last {
+  grid-area: last;
+}
+.form__input-content.mail {
+  grid-area: mail;
+}
+.form__input-content.about {
+  grid-area: about;
+}
+.form__input-content.about input {
+  height: 86px;
+}
+.f4__form input[type="submit"] {
+  padding: 5px 10px;
+  grid-area: submit;
+}
+.f4__response-content {
+  grid-area: res;
+}
+.f4__response {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.f4__response__joined {
+  border: 1px solid var(--border);
+  padding: 10px;
+  max-width: 700px;
+  height: min-content;
+}
+.f4__response__joined-group,
+.f4__response__joined-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  .f4 {
+    grid-template:
+    "img form" auto
+    "res res" auto
+    / min-content auto;
+  }
+  .f4__form {
+    grid-template-columns: minmax(0, 400px);
+  }
+}
+@media screen and (min-width: 900px) {
+  .f4__form {
+    grid-template-columns: 293px 293px;
+    grid-template-areas:
+      "name  last"
+      "mail  mail"
+      "about about"
+      "submit submit";
+  }
+}

@@ -1,0 +1,42 @@
+.div-inline {
+ display: inline-block;
+ margin: 0 8px;
+ font-family: monospace;
+}
+.div-block {
+ display: block;
+ margin: 0 10px;
+ font-family: monospace;
+}
+.none {
+ display: none;
+}
+.block {
+ display: inline-block;
+}
+.error-active {
+ display: block;
+ background: var(--err-background);
+ border: 1px solid var(--err-border);
+ border-radius: 50px;
+ color: var(--err-text);
+ padding: 5px 10px;
+  margin: 5px 0;
+ width: max-content;
+}
+.error-inactive {
+ display: none;
+}
+.result {
+  margin-top: 10px;
+}
+@media screen and (min-width: 440px){
+  .f2 {
+    grid-template-columns: repeat(2, minmax(0, 293px));
+  }
+}
+@media screen and (min-width: 800px){
+  .f2 {
+    grid-template-columns: repeat(3, minmax(0, 293px));
+  }
+}

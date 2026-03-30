@@ -1,0 +1,32 @@
+.f21__form {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 10px;
+}
+
+.f21__mesa_head {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	align-items: center;
+}
+
+.f21__mesa_body-item {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	align-items: center;
+}
+
+.f21__mesa_head-button,
+.f21__mesa_body-button {
+	height: 30px;
+	width: 30px;
+	margin: 5px;
+}
+
+.f21__mesa_body-button.red {
+	background-color: red;
+}
+.f21__mesa_body-button.green {
+	background-color: green;
+}

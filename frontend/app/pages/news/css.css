@@ -1,0 +1,49 @@
+.news {
+  display: grid;
+  grid-template:
+    "autor" auto
+    "version" auto;
+}
+.news__autor {
+  grid-area: autor;
+  font-size: 2em;
+  font-family: "courier new", "GeistMonoVF";
+  text-align: center;
+}
+.news__info {
+  grid-area: info;
+}
+.news__version {
+  grid-area: version;
+}
+.news__version-content {
+  display: flex;
+  padding: 10px 15px;
+  gap: 35px;
+  flex-direction: column;
+  align-items: center;
+}
+.news__version-info {
+  text-align: center;
+}
+.news__version-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.news__version-info ul {
+  list-style: none;
+}
+@media screen and (min-width: 600px){
+  .news__autor {
+    text-align: start;
+  }
+  .news__version-content {
+    flex-direction: row;
+  }
+  .news__version-info {
+    text-align: start;
+  }
+  .news__version-info ul {
+    list-style: disc;
+  }
+}

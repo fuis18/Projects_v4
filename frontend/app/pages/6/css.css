@@ -1,0 +1,9 @@
+#sitio {
+  text-align: center;
+  font-size: 5rem;
+  border-radius: 50px;
+}
+.f6 form {
+  grid-template-columns: repeat(2, minmax(0, 293px));
+  margin-bottom: 10px;
+}

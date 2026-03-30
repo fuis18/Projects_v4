@@ -1,0 +1,8 @@
+.f1 {
+  display: grid;
+}
+@media screen and (min-width: 800px) {
+  .f1 {
+    grid-template-columns: 400px 1fr;
+  }
+}
