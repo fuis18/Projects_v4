@@ -1,0 +1,74 @@
+{
+    "autor": "Luis Ángel Román Cieza",
+    "versiones": [
+        {
+            "title": "None",
+            "description": [
+                "Notepad",
+                "Html puro",
+                "Css con etiquetas",
+                "Hiperlinks",
+                "Vid, img y aud"
+            ]
+        },
+        {
+            "title": "Style: old",
+            "description": [
+                "Sublime Text",
+                "Ingreso de datos por alerts",
+                "Nivel de estilos simples",
+                "Todo el código en un archivo",
+                "Creación de etiquetas por Texto",
+                "Creación y eliminación de elementos"
+            ]
+        },
+        {
+            "title": "Personality",
+            "description": [
+                "Uso de los inputs",
+                "Tema oscuro por defecto",
+                "Proyectos separados por páginas",
+                "Implemento de UI y UX",
+                "Uso del local storage",
+                "Chat Realtime",
+                "Bucles y condicionales anidados"
+            ]
+        },
+        {
+            "title": "Master front",
+            "description": [
+                "Visual Studio",
+                "Encabezado estatico",
+                "Cloud - Uso de Github",
+                "Implemento de modo Oscuro y Claro",
+                "Optimización para celulares",
+                "Proyectos grandes: Horario y Eficiencia lectora",
+                "Proyectos de APis, IA y Canva"
+            ]
+        },
+        {
+            "title": "Backend - Actual",
+            "description": [
+                "Uso de Next.js",
+                "Optimización de proyectos",
+                "Uso de Express.js",
+                "Variables globales",
+                "Uso de matemáticas",
+                "API Canva especializado",
+                "Component Clock"
+            ]
+        },
+        {
+            "title": "Data Base - Próximamente",
+            "description": [
+                "Typescript",
+                "Multi-idioma",
+                "NestJS",
+                "PostgressSQL",
+                "Autenticacion",
+                "Notifications",
+                "More"
+            ]
+        }
+    ]
+}
