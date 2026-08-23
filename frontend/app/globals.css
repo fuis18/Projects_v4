@@ -1,13 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: initial;
 }
+
 html[data-theme="dark"] {
   --background-main: #333;
   --background-side: #555;
@@ -138,16 +136,18 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1em .5em
 }
 .cont__pages {
   display: block;
 }
 .form__div {
   padding: 1px 8px;
-  border: 1px solid var(--border);
-  border-radius: 50px;
   text-align: center;
   cursor: pointer;
+  max-width: 120px;
+  justify-items: center;
+  overflow-wrap: anywhere;
 }
 .form__div:hover {
   background: var(--hover);
@@ -159,6 +159,15 @@ main {
   margin: 5px;
   min-width: 120px;
 }
+
+html[data-theme="dark"] .form__div__img-ok {
+  filter: invert(0.7);
+}
+
+html[data-theme="dark"] .form__div__img-ok:hover {
+  filter: invert(1);
+}
+
 .a {
   white-space: pre-wrap;
 }

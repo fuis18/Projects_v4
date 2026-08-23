@@ -23,7 +23,7 @@ export default function Navbar() {
         storedTheme = "light";
       }
       setTheme(storedTheme);
-      document.body.setAttribute("data-theme", storedTheme);
+      document.documentElement.setAttribute("data-theme", storedTheme);
     }
   }, []);
 
@@ -32,7 +32,7 @@ export default function Navbar() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-    document.body.setAttribute("data-theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
   };
 
   return (
