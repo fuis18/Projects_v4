@@ -1,0 +1,15 @@
+pnpm-lock.yaml
+frontend/pnpm-lock.yaml
+frontend/.next/
+frontend/out/
+
+backend/pnpm-lock.yaml
+
+# dependencies
+node_modules/
+
+# production
+/build
+
+# vercel
+.vercel

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Main from "@/app/components/Main";
+import Main from "@/components/Main";
 import { API_URL } from "@/config";
 import Version from "./Version";
 import "./css.css";

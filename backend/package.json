@@ -8,14 +8,14 @@
     "dev": "nodemon api/index"
   },
   "keywords": [],
-  "author": "Luis Ángel Román Cieza",
+  "author": "Fuis18",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "cors": "2.8.6",
+    "express": "5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "3.1.14"
   }
 }

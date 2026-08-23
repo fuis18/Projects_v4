@@ -1,5 +1,5 @@
 "use client";
-import Main from "@/app/components/Main";
+import Main from "@/components/Main";
 import "./css.css";
 import { useState } from "react";
 import Compare from "./Compare";

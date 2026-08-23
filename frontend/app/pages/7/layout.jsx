@@ -1,6 +1,11 @@
 import { API_URL } from "@/config";
 export async function generateMetadata() {
-  const response = await fetch(`${API_URL}/`);
+  let response;
+  try {
+    response = await fetch(`${API_URL}/`);
+  } catch {
+    return {};
+  }
   const data = await response.json();
   let meta = data[0][7];
   return {

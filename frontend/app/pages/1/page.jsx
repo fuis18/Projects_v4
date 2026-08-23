@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Main from "@/app/components/Main";
+import Main from "@/components/Main";
 import "./css.css";
 
 export default function Page() {

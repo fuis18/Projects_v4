@@ -1,6 +1,6 @@
 "use client";
-import Main from "@/app/components/Main";
-import Checkbox from "@/app/components/Main/Checkbox";
+import Main from "@/components/Main";
+import Checkbox from "@/components/Main/Checkbox";
 import "./css.css";
 import React, { useState, useEffect, useRef } from "react";
 
